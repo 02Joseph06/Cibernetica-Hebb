@@ -1,4 +1,4 @@
-# 1. Definición del Problema
+
 ✨ **Clasificación de Mobs de Minecraft usando Aprendizaje Hebbiano** ✨
 
 ---
