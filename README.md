@@ -1,1 +1,96 @@
-# Cibernetica-Hebb
+# 1. Definición del Problema
+✨ **Clasificación de Mobs de Minecraft usando Aprendizaje Hebbiano** ✨
+
+---
+
+## Participantes
+- Juan Holguín  
+- Juan Vásquez  
+- Luigi Rincón  
+- Samuel Moya  
+- Sara León  
+- Uriel Rodríguez  
+
+---
+
+
+## 🧩 Problema a Resolver
+
+**Clasificar imágenes reales de mobs de Minecraft** en tres categorías:
+
+- 🟦 **Aldeano**  
+- 🟩 **Aldeano Zombi**  
+- 🟥 **Pillager**
+
+---
+
+## 🖼️ Formato de entrada para la red
+
+Cada imagen se procesa para convertirse en un vector numérico que la red pueda interpretar:
+
+1. Convertir a escala de grises.  
+2. Redimensionar a **8×8 píxeles**.  
+3. Normalizar los valores al rango **[-1, 1]**.  
+4. Aplanar la matriz en un vector de **64 elementos**.
+
+Este vector es la representación que la red usará como entrada.
+
+---
+
+# Proyecto: Clasificación Hebbiana de Mobs de Minecraft
+
+---
+
+## Participantes
+- Juan Holguín
+- Juan Vásquez
+- Luigi Rincón
+- Samuel Moya
+- Sara León
+- Uriel Rodríguez
+
+---
+
+## ⭐ 1. Definición del Problema
+Se plantea una tarea sencilla de clasificación utilizando aprendizaje hebbiano: clasificar imágenes de tres mobs de Minecraft (Aldeano, Aldeano Zombi y Pillager).
+
+Las imágenes se procesan convirtiéndolas a escala de grises, reduciéndolas a 8×8 píxeles y normalizándolas, produciendo un vector de 64 entradas por imagen.
+
+---
+
+## ⭐ 2. Diseño de la Red
+La red se estructura como un modelo hebbiano multicapa:
+
+- 64 neuronas de entrada (píxeles de la imagen)
+- 8 neuronas ocultas con activación *tanh*
+- 3 neuronas de salida (una por clase)
+
+El aprendizaje sigue la regla de Hebb, reforzando conexiones por coactivación: *"las neuronas que se activan juntas se conectan juntas"*.
+
+---
+
+## ⭐ 3. Implementación del Modelo
+El modelo se implementa en Python y permite:
+
+- Inicializar pesos aleatorios para **W1** y **W2**.
+- Entrenar mediante aprendizaje hebbiano, reforzando las conexiones con cada muestra.
+- Probar el modelo: una nueva imagen atraviesa la red y la salida con mayor activación determina la clase predicha.
+- Visualizar la evolución de los pesos usando *Matplotlib*.
+
+---
+
+## ⭐ 4. Evaluación y Análisis de Resultados
+La red obtuvo los siguientes resultados:
+
+- Clasificación correcta para **Aldeano** y **Aldeano Zombi**.
+- Confusión del **Pillager** con **Aldeano Zombi**.
+- Precisión final aproximada: **66%**.
+
+Conclusiones:
+- La red formó prototipos básicos.
+- Limitaciones debidas a pocas imágenes por clase, baja resolución y la ausencia de corrección de errores en la regla de Hebb.
+
+Posibles mejoras:
+- Aumentar la resolución.
+- Incorporar más ejemplos por clase.
+- Usar características visuales más ricas o filtros previos.
