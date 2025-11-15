@@ -14,7 +14,11 @@
 ---
 
 
-## 🧩 Problema a Resolver
+## ⭐ 1. Definición del Problema
+Se plantea una tarea sencilla de clasificación utilizando aprendizaje hebbiano: clasificar imágenes de tres mobs de Minecraft (Aldeano, Aldeano Zombi y Pillager).
+
+Las imágenes se procesan convirtiéndolas a escala de grises, reduciéndolas a 8×8 píxeles y normalizándolas, produciendo un vector de 64 entradas por imagen.
+
 
 **Clasificar imágenes reales de mobs de Minecraft** en tres categorías:
 
@@ -24,37 +28,6 @@
 
 ---
 
-## 🖼️ Formato de entrada para la red
-
-Cada imagen se procesa para convertirse en un vector numérico que la red pueda interpretar:
-
-1. Convertir a escala de grises.  
-2. Redimensionar a **8×8 píxeles**.  
-3. Normalizar los valores al rango **[-1, 1]**.  
-4. Aplanar la matriz en un vector de **64 elementos**.
-
-Este vector es la representación que la red usará como entrada.
-
----
-
-# Proyecto: Clasificación Hebbiana de Mobs de Minecraft
-
----
-
-## Participantes
-- Juan Holguín
-- Juan Vásquez
-- Luigi Rincón
-- Samuel Moya
-- Sara León
-- Uriel Rodríguez
-
----
-
-## ⭐ 1. Definición del Problema
-Se plantea una tarea sencilla de clasificación utilizando aprendizaje hebbiano: clasificar imágenes de tres mobs de Minecraft (Aldeano, Aldeano Zombi y Pillager).
-
-Las imágenes se procesan convirtiéndolas a escala de grises, reduciéndolas a 8×8 píxeles y normalizándolas, produciendo un vector de 64 entradas por imagen.
 
 ---
 
